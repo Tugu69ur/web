@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vandebo's Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body class="font-['Roboto'] bg-gray-100 text-gray-800">
+    <header class="bg-gray-700 text-white py-4">
+        <nav class="container mx-auto flex justify-between">
+            <a href="index.html" class="px-60">HOME</a>
+            <a href="store.html" class="px-60">STORE</a>
+            <a href="about.html" class="px-60">ABOUT</a>
+        </nav>
+    </header>
+  <div class="bg-gray-600 text-white text-6xl py-16 text-center font-bold">
+    Vandebo's Shop
+  </div>
+
+  <div class="text-center text-2xl font-bold my-8">MUSIC</div>
+  <div class="flex justify-center flex-wrap">
+    <div class="product bg-white shadow-md p-4 m-4 text-center">
+      <img src="https://cdns-images.dzcdn.net/images/cover/3a6548cd859ab33d737f9441bb8acb1c/1900x1900-000000-80-0-0.jpg" alt="Album 1 cover art" class="w-48 h-48 mx-auto">
+      <div class="mt-4 font-semibold">
+        <a href="firstalbum.html">1st album</a>  
+      </div>
+      <div class="text-gray-700">$9.99</div>
+      <button class="mt-2 bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600">ADD TO CART</button>
+    </div>
+
+    <div class="product bg-white shadow-md p-4 m-4 text-center">
+      <img src="https://cdns-images.dzcdn.net/images/cover/dfb690507f2be8f8325cbd2f129ee631/1900x1900-000000-80-0-0.jpg" alt="Album 2 cover art" class="w-48 h-48 mx-auto">
+      <div class="mt-4 font-semibold">2nd album</div>
+      <div class="text-gray-700">$9.99</div>
+      <button class="mt-2 bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600">ADD TO CART</button>
+    </div>
+
+    <div class="product bg-white shadow-md p-4 m-4 text-center">
+      <img src="https://cdns-images.dzcdn.net/images/cover/e4caed0cf5031f4929466a81a6df60d7/1900x1900-000000-80-0-0.jpg" alt="Album 3 cover art" class="w-48 h-48 mx-auto">
+      <div class="mt-4 font-semibold">3rd album</div>
+      <div class="text-gray-700">$9.99</div>
+      <button class="mt-2 bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600">ADD TO CART</button>
+    </div>
+
+    <div class="product bg-white shadow-md p-4 m-4 text-center">
+      <img src="https://cdns-images.dzcdn.net/images/cover/d6006d071d805214eb923e70cf6ed396/1900x1900-000000-80-0-0.jpg" alt="Album 4 cover art" class="w-48 h-48 mx-auto">
+      <div class="mt-4 font-semibold">Coming soon</div>
+      <div class="text-gray-700">$9.99</div>
+      <button class="mt-2 bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600">ADD TO CART</button>
+    </div>
+  </div>
+
+  <div class="text-center text-2xl font-bold my-8">MERCH</div>
+  <div class="flex justify-center flex-wrap">
+    <div class="product bg-white shadow-md p-4 m-4 text-center">
+      <img src="https://pbs.twimg.com/media/GOZBLq1W4AAqc15.jpg" alt="T-Shirt" class="w-48 h-48 mx-auto">
+      <div class="mt-4 font-semibold">T-Shirt</div>
+      <div class="text-gray-700">$19.99</div>
+      <button class="mt-2 bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600">ADD TO CART</button>
+    </div>
+
+    <div class="product bg-white shadow-md p-4 m-4 text-center">
+      <img src="https://incorporatedstyle.com/content/uploads/travis-scott-hamburger-jersey-vetements-shorts-louis-vuitton-shoe-bag.jpg" alt="Short" class="w-48 h-48 mx-auto">
+      <div class="mt-4 font-semibold">Short</div>
+      <div class="text-gray-700">$9.99</div>
+      <button class="mt-2 bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600">ADD TO CART</button>
+    </div>
+  </div>
+
+  <div class="text-center text-2xl font-bold my-8">CART</div>
+  <div class="cart flex justify-center">
+    <table class="w-3/4 text-left border-collapse">
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="border p-4">ITEM</th>
+          <th class="border p-4">PRICE</th>
+          <th class="border p-4">QUANTITY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border p-4" colspan="3">Total: $0</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="bg-teal-500 text-white py-4 px-4 rounded hover:bg-teal-600 w-30 h-30">PURCHASE</button>
+  </div>
+
+  <footer class="bg-gray-500 text-white py-4">
+    <div class="container mx-auto text-center">
+        <h3 class="text-2xl font-bold">Vandebo</h3>
+        <div class="mt-2">
+            <a href="https://x.com/officialvandebo" class="px-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/officialvandebo" class="px-2"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+</footer>
+<script src="store.js"></script>
+</body>
+</html>

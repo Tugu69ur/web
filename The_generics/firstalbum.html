@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandebo - Song List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-roboto bg-slate-400">
+    <header class="bg-gray-700 text-white py-4">
+        <nav class="container mx-auto flex justify-between">
+            <a href="index.html" class="px-60">HOME</a>
+            <a href="store.html" class="px-60">STORE</a>
+            <a href="about.html" class="px-60">ABOUT</a>
+        </nav>
+    </header>
+    <div class="flex">
+        <img src="https://cdns-images.dzcdn.net/images/cover/3a6548cd859ab33d737f9441bb8acb1c/1900x1900-000000-80-0-0.jpg" alt="" class="w-64 h-64 mt-10 ml-60 mb-10">
+        <div class="row-auto">
+            <p class="mt-20 ml-10 font-bold text-2xl">Vandebo</p>
+            <p class="ml-10 mt-1 font-bold text-3xl">Munkhud 21</p>
+            <p class="ml-10 font-bold">Released date: December 8, 2018</p>
+            <div class="mt-1 ml-10 w-28 h-auto bg-gray-500 text-white font-bold">Hip-Hop/Rap</div>
+        </div>
+    </div>
+
+    <section class="py-10 bg-white">
+        <h2 class="text-4xl font-bold text-center mb-8 text-gray-900">SONGS</h2>
+        <div class="container mx-auto text-center">
+            <div id="songButtons" class="flex flex-col space-y-4 items-center"></div>
+        </div>
+    </section>
+
+    <div class="fixed flex flex-row gap-8 bottom-0 left-0 w-full bg-gray-500/80 shadow-lg pt-3 z-50 ">
+            <button id="prevBtn" class="ml-10 text-2xl text-gray-600 hover:text-gray-800">
+                <i class="fas fa-backward"></i>
+            </button>
+            <img src="https://cdns-images.dzcdn.net/images/cover/3a6548cd859ab33d737f9441bb8acb1c/1900x1900-000000-80-0-0.jpg" alt="" class="w-[80px] h-[80px]">
+            <button id="nextBtn" class="text-2xl text-gray-600 hover:text-gray-800">
+                <i class="fas fa-forward"></i>
+            </button>
+            <button id="shuffleBtn" class="text-2xl text-gray-600 hover:text-gray-800">
+                <i class="fas fa-random"></i>
+            </button>
+          
+            <audio controls id="songPlayer" class="w-[1500px] mt-2">
+                <source id="audioSource" src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div id="currentSong" class="text-xl font-bold text-center mt-3 text-gray-800"></div>
+
+    </div>
+
+    <footer class="bg-gray-500 text-white py-3 h-56">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold">The Generics</h3>
+            <div class="mt-2">
+                <a href="https://x.com/officialvandebo" class="px-2"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/officialvandebo" class="px-2"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
