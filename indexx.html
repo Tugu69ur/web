@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Row and Column</title>
+    <style>
+        .row-container {
+            display: flex;
+            flex-direction: row; /* Set main container to a row layout */
+            gap: 20px;
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+
+        .column-container {
+            display: flex;
+            flex-direction: column; /* Set inner containers to a column layout */
+            gap: 10px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .box {
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row-container">
+        <div class="column-container">
+            <div class="box">Column 1 - Item 1</div>
+            <div class="box">Column 1 - Item 2</div>
+            <div class="box">Column 1 - Item 3</div>
+        </div>
+        <div class="column-container">
+            <div class="box">Column 2 - Item 1</div>
+            <div class="box">Column 2 - Item 2</div>
+            <div class="box">Column 2 - Item 3</div>
+        </div>
+    </div>
+</body>
+</html>
